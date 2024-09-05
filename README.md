@@ -26,7 +26,7 @@ prepare deployment and automate interaction in the following way:
 2. Create an action which will containerize the released application and store it in a registry
 (DockerHub, GHCR, whatever you like)
 3. Create a kubernetes definition (Helm Chart, Kustomize, Raw YAML, whatever) that
-would allow a simple ‘kubectl create ...’ to deploy the application
+would allow a simple ‘kubectl create ...’ to deploy the application - **in our case we have created a helm chart to deploy docker image to cluster from local copy of repo- from root dir of repo run `helm upgrade test-release ./challenge --namespace default`**
 
 ## Phase 3: Production Observability
 
